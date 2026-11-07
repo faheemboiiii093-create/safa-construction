@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08172d" />
+    <title>Admin sign in | SAFA CONSTRUCTION</title>
+    <style>
+      :root { color-scheme: dark; font-family: "DM Sans", Arial, sans-serif; background: #08172d; color: #f6f2e8; }
+      * { box-sizing: border-box; }
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(ellipse at 50% 0, #153456, #08172d 68%); }
+      main { width: min(100%, 440px); padding: clamp(26px, 6vw, 42px); border: 1px solid rgba(214,184,117,.3); background: rgba(11,30,55,.9); box-shadow: 0 24px 80px rgba(0,0,0,.3); }
+      img { display: block; width: min(190px, 60%); margin: 0 auto 26px; }
+      .eyebrow { color: #d6b875; font-size: 11px; letter-spacing: .16em; text-align: center; }
+      h1 { margin: 10px 0; font-family: Georgia, serif; font-size: 34px; font-weight: 400; text-align: center; }
+      p { color: #c0c8d3; font-size: 14px; line-height: 1.7; }
+      form { display: grid; gap: 15px; margin-top: 24px; }
+      label { display: grid; gap: 7px; font-size: 13px; }
+      input { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid rgba(214,184,117,.3); color: #f6f2e8; background: #102746; font: inherit; }
+      .password-field { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 8px; }
+      .password-field input { grid-row: 1; grid-column: 1; }
+      .password-toggle { grid-row: 1; grid-column: 2; min-width: 68px; min-height: 44px; margin: 0; border: 1px solid rgba(214,184,117,.3); color: #edcf83; background: #102746; font-size: 12px; }
+      button { min-height: 46px; margin-top: 4px; border: 0; color: #08172d; background: #d6b875; font: inherit; font-weight: 700; cursor: pointer; }
+      button:disabled { cursor: wait; opacity: .7; }
+      #login-status { min-height: 24px; color: #edcf83; }
+      a { color: #edcf83; }
+      .back { display: block; margin-top: 24px; font-size: 13px; text-align: center; }
+    </style>
+    <script src="admin-login.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <img src="assets/safa-construction-logo-navy.png" alt="SAFA Construction" />
+      <p class="eyebrow">RESTRICTED ACCESS</p>
+      <h1>Admin sign in</h1>
+      <p>Authorized personnel only. This private account accesses the SAFA Future Lab and does not affect public customer access.</p>
+      <form id="admin-login-form" autocomplete="off">
+        <label for="admin-email">Admin email<input id="admin-email" name="email" type="email" autocomplete="username" value="safaconstruction62@gmail.com" required maxlength="254" /></label>
+        <label for="admin-password">Password
+          <span class="password-field">
+            <input id="admin-password" name="password" type="password" autocomplete="off" placeholder="••••••••••••" required maxlength="256" />
+            <button id="password-toggle" class="password-toggle" type="button" aria-controls="admin-password" aria-pressed="false">Show</button>
+          </span>
+        </label>
+        <button type="submit">Sign in securely</button>
+      </form>
+      <p id="login-status" role="status" aria-live="polite"></p>
+      <a class="back" href="index.html">Return to SAFA Construction</a>
+    </main>
+  </body>
+</html>

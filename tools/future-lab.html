@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08172d">
+  <meta name="description" content="Explore 15 interactive SAFA CONSTRUCTION design, planning, and immersive browser concepts.">
+  <title>SAFA Future Lab | SAFA CONSTRUCTION</title>
+  <link rel="stylesheet" href="feature-pages.css">
+  <script src="future-lab-data.js" defer></script>
+  <script src="future-lab-auth.js" defer></script>
+  <script src="future-lab.js" defer></script>
+</head>
+<body class="future-hub" hidden>
+  <a class="skip-link" href="#future-main">Skip to Future Lab features</a>
+  <header class="feature-header">
+    <a href="../index.html" aria-label="SAFA Construction home"><img src="../assets/safa-construction-logo-navy.png" alt="SAFA Construction"></a>
+    <nav aria-label="Admin navigation"><span class="future-admin-label">ADMIN INTERFACE</span><button id="future-sign-out" class="admin-sign-out" type="button">Sign out</button></nav>
+  </header>
+  <main class="future-main" id="future-main">
+    <section class="future-hub-hero">
+      <p class="eyebrow">SAFA CONSTRUCTION · DESIGN & PLANNING CONCEPTS</p>
+      <h1>SAFA <em>Future Lab</em></h1>
+      <p>Explore 15 individual experiences across immersive design, home planning, and guided project journeys. Each feature has its own page and browser-based controls. AI, private project data, and device-dependent capabilities are clearly identified where they are not connected.</p>
+      <div class="future-hub-count"><strong>15</strong><span>separate experiences</span><strong>04</strong><span>feature collections</span></div>
+    </section>
+    <section class="future-disclosure" aria-label="Feature availability notice">
+      <strong>Concepts, clearly labelled.</strong>
+      <span>3D previews and local tools run in your browser. No customer submission, live project records, verified material prices, plan-reading AI, or construction approval is implied.</span>
+    </section>
+    <section class="future-catalog" aria-labelledby="future-catalog-title">
+      <div class="future-catalog-heading"><div><p class="eyebrow">CHOOSE YOUR EXPERIENCE</p><h2 id="future-catalog-title">Explore the lab</h2></div>
+        <label class="future-search-label">Search features<input id="future-search" type="search" placeholder="Try “lighting” or “plot”" autocomplete="off"></label>
+      </div>
+      <div class="future-category-filters" role="group" aria-label="Filter features by category">
+        <button type="button" data-future-filter="All" aria-pressed="true">All 15</button>
+        <button type="button" data-future-filter="3D & Immersive" aria-pressed="false">3D & Immersive</button>
+        <button type="button" data-future-filter="Design Studio" aria-pressed="false">Design Studio</button>
+        <button type="button" data-future-filter="Planning & Intelligence" aria-pressed="false">Planning & Intelligence</button>
+        <button type="button" data-future-filter="Guided Experiences" aria-pressed="false">Guided Experiences</button>
+      </div>
+      <p id="future-results" class="tool-result" role="status" aria-live="polite"></p>
+      <div id="future-feature-grid" class="future-feature-grid"></div>
+    </section>
+  </main>
+  <footer class="feature-footer"><a href="../index.html">SAFA CONSTRUCTION</a><span>BUILDING YOUR VISION</span></footer>
+</body>
+</html>
