@@ -1,3 +1,7 @@
+declare const process: {
+  env: Record<string, string | undefined>;
+};
+
 const ADMIN_EMAIL = "safaconstruction62@gmail.com";
 const SESSION_COOKIE = "safa_admin_session";
 
